@@ -1,0 +1,108 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Imagens -->
+        <ImageView
+            android:id="@+id/imagePizza"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/pizzariasabor"
+            android:contentDescription="Imagem de Pizza"
+            android:layout_marginBottom="8dp" />
+
+        <ImageView
+            android:id="@+id/imageBurger"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/pizzariasabor"
+            android:contentDescription="Imagem de Hamburguer"
+            android:layout_marginBottom="8dp" />
+
+        <ImageView
+            android:id="@+id/imageDrink"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/pizzariasabor"
+            android:contentDescription="Imagem de Bebida"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Botões -->
+        <Button
+            android:id="@+id/btnConfirmar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Confirmar Pedido"
+            android:layout_marginBottom="8dp" />
+
+        <Button
+            android:id="@+id/btnCancelar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Cancelar Pedido"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Grupo de RadioButtons -->
+        <RadioGroup
+            android:id="@+id/radioGroupTamanho"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RadioButton
+                android:id="@+id/radioPequeno"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pequeno" />
+            <RadioButton
+                android:id="@+id/radioMedio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Médio" />
+            <RadioButton
+                android:id="@+id/radioGrande"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Grande" />
+        </RadioGroup>
+
+        <!-- Switches -->
+        <Switch
+            android:id="@+id/switchEntrega"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Entrega?" />
+
+        <Switch
+            android:id="@+id/switchQueijoExtra"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Queijo Extra?" />
+
+        <!-- Entrada de texto -->
+        <EditText
+            android:id="@+id/editNome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nome do Cliente"
+            android:layout_marginBottom="8dp" />
+
+        <EditText
+            android:id="@+id/editDescricao"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Descrição do Pedido"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Barra de Progresso -->
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone" />
+    </LinearLayout>
+</ScrollView>
